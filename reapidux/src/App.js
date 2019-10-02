@@ -12,7 +12,7 @@ e.preventDefault();
 props.getKanyeRest();
 }
   return (
-    <div className="App">
+    <div className="container">
       <Display clickAction={getKanyeRest} quote={props.quote}/>
     </div>
   );
