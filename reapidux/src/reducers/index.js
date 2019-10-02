@@ -19,7 +19,10 @@ export const reducer = (state = initialState, action) => {
                 ...state,
                 error: "",
                 someQuoteHere: action.payload.quote
-            }
+            };
+        }
+        case FETCH_QUOTE_FAILURE: {
+            return { ...state, error: action.payload };
         }
         default: {
             return state;
